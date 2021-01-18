@@ -1,4 +1,4 @@
-package com.karthn.springLearning.controller;
+package com.karthn.springLearning.data.controller;
 
 import com.karthn.springLearning.data.entity.Reservation;
 import com.karthn.springLearning.data.repository.ReservationsRepository;

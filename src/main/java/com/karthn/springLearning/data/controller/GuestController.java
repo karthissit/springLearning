@@ -1,4 +1,4 @@
-package com.karthn.springLearning.controller;
+package com.karthn.springLearning.data.controller;
 
 import com.karthn.springLearning.data.entity.Guest;
 import com.karthn.springLearning.data.repository.GuestRepository;

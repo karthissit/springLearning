@@ -1,4 +1,4 @@
-package com.karthn.springLearning.controller;
+package com.karthn.springLearning.data.controller;
 
 import com.karthn.springLearning.data.entity.Room;
 import com.karthn.springLearning.data.repository.RoomRepository;
