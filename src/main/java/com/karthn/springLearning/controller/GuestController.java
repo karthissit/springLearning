@@ -1,20 +1,22 @@
 package com.karthn.springLearning.controller;
 
-import com.karthn.springLearning.data.entity.Room;
-import com.karthn.springLearning.data.repository.RoomRepository;
+import com.karthn.springLearning.data.entity.Guest;
+import com.karthn.springLearning.data.repository.GuestRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/rooms")
-public class RoomController {
+@RequestMapping("/guests")
+public class GuestController {
+
     @Autowired
-    private RoomRepository roomRepository;
+    private GuestRepository guestRepository;
 
     @GetMapping
-    public Iterable<Room> getRooms(){
-        return roomRepository.findAll();
+    private Iterable<Guest> getGuestList()
+    {
+        return guestRepository.findAll();
     }
 }
